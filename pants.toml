@@ -1,0 +1,19 @@
+[GLOBAL]
+pants_version = "2.9.0"
+backend_packages = [
+  "pants.backend.python",
+  "pants.backend.python.lint.black",
+  "pants.backend.python.lint.isort",
+  "pants.backend.python.typecheck.mypy",
+  "pants.backend.python.lint.docformatter",
+  "pants.backend.awslambda.python"
+]
+
+[anonymous-telemetry]
+enabled = false
+
+[python]
+requirement_constraints = "constraints.txt"
+
+[source]
+root_patterns = ["/"]
